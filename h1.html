@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <script src="s1.js"></script>
+    <style>
+        #form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        #table {
+            display: flex;
+            justify-content: center;
+        }
+        table {
+            width: 500px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="form">
+        <input type="text" placeholder="enter your task" id="task">
+        <input type="submit" onclick="active(event)">
+    </form>
+    <br><br>
+    
+    <div id="table">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Task No.</th>
+                    <th>Task</th>
+                    <th>Delete Task</th>
+                </tr>
+            </thead>
+            
+            <tbody id="list"></tbody>
+        </table>
+    </div>
+
+</body>
+</html>
